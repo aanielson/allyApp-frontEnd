@@ -1,0 +1,7 @@
+.lib-btn {
+    font-size: 13pt;
+}
+#filter-menu button:hover {
+    border-bottom: solid;
+    border-bottom-color: gray;
+}

@@ -8,11 +8,6 @@ body {
 }
 h4 {line-height: 0.8;}
   /*======================================Navbar/Header styling======================================*/
-  /* actually only need this image on the home page
-    header {
-    background-image: url(../img/fists.png);
-    
-  } */
 
 .navbar {
     overflow: hidden;
@@ -60,7 +55,7 @@ a:hover {
     text-decoration: none;
     font-size: 17px;
 }
-button {
+#search-button {
     box-sizing: content-box;
     margin-top: 6px;
     width: 20px;
