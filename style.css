@@ -1,5 +1,5 @@
 body {
-    background-color: whitesmoke;
+    background-color: white;
     color: gray;
     font-family: 'Montserrat', sans-serif;
 }
@@ -79,6 +79,9 @@ a:hover {
     text-align: center;
     border-radius: 50%;
     font-size: 18px; 
+}
+#fists {
+    width: 100%;
 }
 /*====================================== END Navbar/Header styling======================================*/
 
