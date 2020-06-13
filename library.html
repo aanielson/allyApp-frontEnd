@@ -71,30 +71,30 @@
         <div id="filter-menu">
             <div class="row ">
                 <div class="col-3">
-                    <button class="btn lib-btn text-secondary active" onclick="filterSelection('all')"> Show all</button>
+                    <button class="btn lib-btn text-secondary active" data-filter="0"> Show all</button>
                 </div>
                 <div class="col-3">
-                    <button class="btn lib-btn text-secondary" onclick="filterSelection('books')"> Books</button>                
+                    <button class="btn lib-btn text-secondary" data-filter="1"> Books</button>                
                 </div>
                 <div class="col-3">
-                    <button class="btn lib-btn text-secondary" onclick="filterSelection('childrensBooks')"> Childrens Books</button>
+                    <button class="btn lib-btn text-secondary" data-filter="2"> Childrens Books</button>
                 </div>
                 <div class="col-3">
-                    <button class="btn lib-btn text-secondary" onclick="filterSelection('podcasts')"> Podcasts</button>
+                    <button class="btn lib-btn text-secondary" data-filter="3"> Podcasts</button>
                 </div>
             </div>
             <div class="row">
                 <div class="col-3">
-                    <button class="btn lib-btn text-secondary" onclick="filterSelection('articles')"> Articles</button>
+                    <button class="btn lib-btn text-secondary" data-filter="4"> Articles</button>
                 </div>
                 <div class="col-3">
-                    <button class="btn lib-btn text-secondary" onclick="filterSelection('films')"> Films</button>
+                    <button class="btn lib-btn text-secondary" data-filter="5"> Films</button>
                 </div>
                 <div class="col-3">
-                    <button class="btn lib-btn text-secondary" onclick="filterSelection('shortFilms')"> Short Films</button>
+                    <button class="btn lib-btn text-secondary" data-filter="6"> Short Films</button>
                 </div>
                 <div class="col-3">
-                    <button class="btn lib-btn text-secondary" onclick="filterSelection('userRecs')"> User Recommendations</button>
+                    <button class="btn lib-btn text-secondary" data-filter="7"> User Recommendations</button>
                 </div>
             </div>
         </div>
@@ -205,6 +205,6 @@
         </div>
     </div>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="/js/library.js"></script>
+    <script src="./library.js"></script>
 </body>
 </html>

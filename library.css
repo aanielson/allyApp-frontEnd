@@ -5,3 +5,13 @@
     border-bottom: solid;
     border-bottom-color: gray;
 }
+.filterDiv {
+    display: none;
+    float: left;
+}
+.show {
+    display: block;
+}
+.hide {
+    display: none;
+}
