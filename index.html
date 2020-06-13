@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Link to bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">    
+    <!--Personal Style Sheet-->
+    <link rel="stylesheet" href="./style.css" media="screen" title="no title" charset="utf-8">
+    <!--Link to google fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <!--tab display-->
+    <title>Ally App</title>
+    
+</head>
+<body>
+    <header>
+        <!--Ally App logo will display on far left of every page-->
+        <!--NavBar will display on every page (left justify)-->
+        <nav class="navbar navbar-expand-md">
+            <div class="container-fluid">
+                <!--Ally App Logo?-->
+                <div id="logo" class="text-dark">
+                    <h4>The</h4>
+                    <h4>Ally</h4>
+                    <h4 class="text-secondary">App</h4>
+                </div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbarNav">
+                    <span class="text-secondary navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2 navbarNav">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active"><a href="#" class="text-secondary nav-link active">Home<span class="sr-only">(current)</span></a></li>
+                        <li class="nav-item"><a href="#" class="text-secondary nav-link">Library</a></li>
+                        <li class="nav-item"><a href="#" class="text-secondary nav-link">Get Involved</a></li>
+                        <li class="nav-item"><a href="#" class="text-secondary nav-link">Portfolio</a></li>
+                        <li class="nav-item"><a href="#" class="text-secondary nav-link">Need Help?</a></li>
+                    </ul>
+                <div >
+                <div class="navbar-collapse collapse w-100 order-3 dual-collapse2 navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <!--Search bar will display on every page (right justify)-->
+                            <div id="search-container" action="#">
+                                <button type="submit" id="search-button"><i class="fa fa-search"></i></button>
+                                <input type="text" placeholder="Search" name="search" id="search-input">
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <!--Link to Login Page-->
+                            <a class="nav-link" href="#">
+                                <!--Avatar img displays in far right corner-->
+                                <div class="user-avatar-div">
+                                    <span class="icon-box"><i class="fa fa-user-o fa-xxs text-white"></i></span>
+                                    <img class="user-avatar" src="" />
+                                </div>
+                            </a> 
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!--js files-->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="/index.js"></script>
+</body>
+</html>
