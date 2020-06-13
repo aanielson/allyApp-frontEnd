@@ -21,7 +21,7 @@
     <header>
         <!--Ally App logo will display on far left of every page-->
         <!--NavBar will display on every page (left justify)-->
-        <nav class="navbar navbar-expand-md" id="navlinks">
+        <nav class="homepage-nav navbar navbar-expand-md static-top p-0 fixed-top" id="navlinks">
             <div class="container-fluid">
                 <!--Ally App Logo?-->
                 <div id="logo" class="text-dark">
@@ -103,7 +103,31 @@
         <div class="container library-content">
             <div id="filter-container" class="row">
                 <div class="col-lg-4 col-md-6 filterDiv books" data-category="1" data-sort="value">
-                    {{#each books}}
+                    <div class="item">
+                        <img src="" alt="book cover">
+                        <h3>How to be an Antiracist</h3>
+                        <p>By Ibram X. Kendi</p>
+                        <p>Genre: Non-fiction</p>
+                        <p id="purchase-link"><a href="https://bookshop.org/books/how-to-be-an-antiracist/9780525509288,https://amzn.to/2XIR2Mx">Purchase</a></p>
+                        <p id="amazon-link"><a href="https://www.amazon.com/How-Be-Antiracist-Ibram-Kendi/dp/0525509283/ref=sr_1_1?dchild=1&gclid=CjwKCAjw8pH3BRAXEiwA1pvMscppmvWZrwe0kb49RWOUjZuOeNH1mzJJJJAB5yihtEKo8QA6ffroUBoCiWgQAvD_BwE&hvadid=323093188714&hvdev=c&hvlocphy=9029751&hvnetw=g&hvqmt=e&hvrand=205750131275979184&hvtargid=kwd-606380095379&hydadcr=24631_10399645&keywords=how+to+be+an+antiracist&qid=1592070609&sr=8-1&tag=googhydr-20">Amazon</a></p>
+                    </div>
+                    <div class="item">
+                        <img src="" alt="book cover">
+                        <h3>Me and White Supremacy: Combat Racism, Change the World & Become a Good Ancestor</h3>
+                        <p>By Layla F. Saad</p>
+                        <p>Genre: Non-fiction</p>
+                        <p id="purchase-link"><a href="https://rep.club/collections/books/products/me-and-white-supremacy,https://amzn.to/3h9L9j9">Purchase</a></p>
+                        <p id="amazon-link"><a href="https://www.amazon.com/Me-White-Supremacy-Combat-Ancestor-ebook/dp/B07Y5PHNXB/ref=sr_1_1?crid=1KCUB9RLN747I&dchild=1&keywords=me+and+white+supremacy+book&qid=1592070637&sprefix=me+a%2Caps%2C196&sr=8-1">Amazon</a></p>
+                    </div>
+                    <div class="item">
+                        <img src="" alt="book cover">
+                        <h3>So You Want to Talk About Race</h3>
+                        <p>By Ijeoma Oluo</p>
+                        <p>Genre: Non-fiction</p>
+                        <p id="purchase-link"><a href="https://www.hachettebookgroup.com/titles/ijeoma-oluo/so-you-want-to-talk-about-race/9781580056779/,https://amzn.to/2XIBeJI">Purchase</a></p>
+                        <p id="amazon-link"><a href="https://www.amazon.com/You-Want-Talk-About-Race/dp/1580058825/ref=sr_1_1?crid=2BQ0JECMJGGHP&dchild=1&keywords=so+you+want+to+talk+about+race&qid=1592070657&sprefix=so+you%2Caps%2C192&sr=8-1">Amazon</a></p>
+                    </div>
+                    <!-- {{#each books}}
                         <div class="item">
                             <h3>{{title}}</h3>
                             <p>By {{author}}</p>
@@ -111,53 +135,69 @@
                             <p id="purchase-link"><a href="{{link1}}">Purchase</a></p>
                             <p id="amazon-link"><a href="{{link2}}">Amazon</a></p>
                         </div>
-                    {{/each}}
+                    {{/each}} -->
                 </div>
                 <div class="col-lg-4 col-md-6 filterDiv childrensBooks" data-category="2" data-sort="value">
-                    {{#each childrensBooks}}
+                    <div class="item">
+                        <img src="" alt="book cover">
+                        <h3>A Kid's Book About Racism</h3>
+                        <p>By Jelani Memory</p>
+                        <p>Genre: Children</p>
+                        <p id="purchase-link"><a href="https://akidsbookabout.com/collections/kids-books/products/a-kids-book-about-racism">Purchase</a></p>
+                        <p id="amazon-link"><a href="https://www.amazon.com/Kids-Book-About-Racism-ebook/dp/B088GYYHJX/ref=sr_1_4?crid=GO31E0884RSA&dchild=1&keywords=a+kids+book+about+racism&qid=1592070945&sprefix=a+kids+book%2Caps%2C606&sr=8-4">Amazon</a></p>
+                    </div>
+                    <div class="item">
+                        <img src="" alt="book cover">
+                        <h3>So You Want to Talk About Race</h3>
+                        <p>By Ijeoma Oluo</p>
+                        <p>Genre: Children</p>
+                        <p id="purchase-link"><a href="https://www.hachettebookgroup.com/titles/ijeoma-oluo/so-you-want-to-talk-about-race/9781580056779/,https://amzn.to/2XIBeJI">Purchase</a></p>
+                        <p id="amazon-link"><a href="https://www.amazon.com/You-Want-Talk-About-Race/dp/1580058825/ref=sr_1_1?crid=2BQ0JECMJGGHP&dchild=1&keywords=so+you+want+to+talk+about+race&qid=1592070657&sprefix=so+you%2Caps%2C192&sr=8-1">Amazon</a></p>
+                    </div>
+                    <!-- {{#each childrensBooks}}
                         <div class="item">
                             <h3>{{title}}</h3>
                             <p>By {{author}}</p>
                             <p id="purchase-link"><a href="{{link1}}">Purchase</a></p>
                             <p id="amazon-link"><a href="{{link2}}">Amazon</a></p>
                         </div>
-                    {{/each}}
+                    {{/each}} -->
                 </div>
                 <div class="col-lg-4 col-md-6 filterDiv podcasts" data-category="3" data-sort="value">
-                    {{#each podcasts}}
+                    <!-- {{#each podcasts}}
                         <div class="item">
                             <h3>{{title}}</h3>
                             <p id="purchase-link"><a href="{{link1}}">Listen</a></p>
                             <p id="amazon-link"><a href="{{link2}}">Amazon</a></p>
                         </div>
-                    {{/each}}
+                    {{/each}} -->
                 </div>
                 <div class="col-lg-4 col-md-6 filterDiv articles" data-category="4" data-sort="value">
-                    {{#each articles}}
+                    <!-- {{#each articles}}
                         <div class="item">
                             <h3>{{title}}</h3>
                             <p>By {{author}}</p>
                             <p id="purchase-link"><a href="{{link}}">Read</a></p>
                         </div>
-                    {{/each}}
+                    {{/each}} -->
                 </div>
                 <div class="col-lg-4 col-md-6 filterDiv films" data-category="5" data-sort="value">
-                    {{#each toWatch_long}}
+                    <!-- {{#each toWatch_long}}
                         <div class="item">
                             <h3>{{title}}</h3>
                             <p>Found on {{streaming_service}}</p>
                             <p id="purchase-link"><a href="{{link}}">Watch</a></p>
                         </div>
-                    {{/each}}
+                    {{/each}} -->
                 </div>
                 <div class="col-lg-4 col-md-6 filterDiv shortFilms" data-category="6" data-sort="value">
-                    {{#each toWatch_short}}
+                    <!-- {{#each toWatch_short}}
                         <div class="item">
                             <h3>{{title}}</h3>
                             <p>Found on {{streaming_service}}</p>
                             <p id="purchase-link"><a href="{{link}}">Watch</a></p>
                         </div>
-                    {{/each}}
+                    {{/each}} -->
                 </div>
                 <div class="col-lg-4 col-md-6 filterDiv userRecs" data-category="7" data-sort="value">
                 </div>

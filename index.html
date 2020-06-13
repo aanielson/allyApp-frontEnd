@@ -1,24 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Link to bootstrap-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!--Personal Style Sheet-->
-    <link rel="stylesheet" href="./style.css" media="screen" title="no title" charset="utf-8"> <!--styling for navbar-->
-    <link rel="stylesheet" href="./index.css" media="screen" title="no title" charset="utf-8"> <!---styling for home page-->
+    <link rel="stylesheet" href="./style.css" media="screen" title="no title" charset="utf-8">
+    <!--styling for navbar-->
+    <link rel="stylesheet" href="./index.css" media="screen" title="no title" charset="utf-8">
+    <!---styling for home page-->
     <!--Link to google fonts-->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
     <!--tab display-->
     <title>Ally App</title>
-    <!--js files-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <script src="https://code.jquery.com/jquery.js"></script>
-    <script src="./index.js"></script>    
+
 </head>
+
 <body>
     <header>
         <!--Ally App logo will display on far left of every page-->
@@ -36,54 +38,57 @@
                 </button>
                 <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2 navbarNav">
                     <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active"><a href="#" class="text-secondary nav-link active">Home<span class="sr-only">(current)</span></a></li>
+                        <li class="nav-item active"><a href="#" class="text-secondary nav-link active">Home<span
+                                    class="sr-only">(current)</span></a></li>
                         <li class="nav-item"><a href="#" class="text-secondary nav-link">Library</a></li>
                         <li class="nav-item"><a href="#" class="text-secondary nav-link">Get Involved</a></li>
                         <li class="nav-item"><a href="#" class="text-secondary nav-link">Portfolio</a></li>
                         <li class="nav-item"><a href="#" class="text-secondary nav-link">Need Help?</a></li>
                     </ul>
-                <div >
-                <div class="navbar-collapse collapse w-100 order-3 dual-collapse2 navbarNav">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <!--Search bar will display on every page (right justify)-->
-                            <div id="search-container" action="#">
-                                <button type="submit" id="search-button"><i class="fa fa-search"></i></button>
-                                <input type="text" placeholder="Search" name="search" id="search-input">
-                            </div>
-                        </li>
-                        <li class="nav-item">
-                            <!--Link to Login Page-->
-                            <a class="nav-link" href="#">
-                                <!--Avatar img displays in far right corner-->
-                                <div class="user-avatar-div">
-                                    <span class="icon-box"><i class="fa fa-user-o fa-xxs text-white"></i></span>
-                                    <img class="user-avatar" src="" />
-                                </div>
-                            </a> 
-                        </li>
-                    </ul>
-                </div>
-            </div>
+                    <div>
+                        <div class="navbar-collapse collapse w-100 order-3 dual-collapse2 navbarNav">
+                            <ul class="navbar-nav ml-auto">
+                                <li class="nav-item">
+                                    <!--Search bar will display on every page (right justify)-->
+                                    <div id="search-container" action="#">
+                                        <button type="submit" id="search-button"><i class="fa fa-search"></i></button>
+                                        <input type="text" placeholder="Search" name="search" id="search-input">
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <!--Link to Login Page-->
+                                    <a class="nav-link" href="#">
+                                        <!--Avatar img displays in far right corner-->
+                                        <div class="user-avatar-div">
+                                            <span class="icon-box"><i class="fa fa-user-o fa-xxs text-white"></i></span>
+                                            <img class="user-avatar" src="" />
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
         </nav>
     </header>
     <!--Initial section with image-->
-    <img src="./home.png" alt="fists" id="fists"/>
+    <img src="./home.png" alt="fists" id="fists" />
     <br>
     <br>
     <div class="main container">
         <div class="mission-statement">
-            <h2>The mission of Ally App is to promote the well-being of communities by connecting organizations and individuals in combating racial inequalities and prejudice and by providing organizations and individuals with resources to protect themselves and their loved ones.</h2>
+            <h2>The mission of Ally App is to promote the well-being of communities by connecting organizations and
+                individuals in combating racial inequalities and prejudice and by providing organizations and
+                individuals with resources to protect themselves and their loved ones.</h2>
         </div>
         <br>
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
             <!-- Indicators -->
 
             <ol class="carousel-indicators">
-              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-              <li data-target="#myCarousel" data-slide-to="1"></li>
-              <li data-target="#myCarousel" data-slide-to="2"></li>
-              <li data-target="#myCarousel" data-slide-to="3"></li>
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+                <li data-target="#myCarousel" data-slide-to="3"></li>
             </ol>
 
             <!-- Wrapper for slides -->
@@ -91,41 +96,42 @@
 
                 <div class="carousel-item active" data-pause="false">
                     <a href="https://www.dosomething.org/us/articles/explained-the-protests-for-racial-justice">
-                        <img src="https://images.ctfassets.net/81iqaqpfd8fy/g7KjlSrChrhb00qWuPMcV/343278c4428f0a39f7dfe543b5201e2a/rapid_response_editorial_header.png?h=620&w=1440" 
-                            alt="protest" class="media-img">
+                        <img src="https://images.ctfassets.net/81iqaqpfd8fy/g7KjlSrChrhb00qWuPMcV/343278c4428f0a39f7dfe543b5201e2a/rapid_response_editorial_header.png?h=620&w=1440"
+                            alt="protest" class="d-block w-100">
                         <div class="carousel-caption text-white">
                             <h3>EXPLAINED: THE PROTESTS FOR RACIAL JUSTICE</h3>
                             <p>What’s happening and, more importantly, why.</p>
                         </div>
                     </a>
                 </div>
-        
+
                 <div class="carousel-item">
                     <a href="https://www.dosomething.org/us/articles/black-lives-taken">
                         <img src="https://images.ctfassets.net/81iqaqpfd8fy/1SDBDhULfP8y6LQdYyzc39/1cb2faca5c538a63f3d868000df21824/rapid_response-05.png?h=620&w=1440"
-                            alt="Black Deaths" class="media-img">
+                            alt="Black Deaths" class="d-block w-100">
                         <div class="carousel-caption text-white">
                             <h3>BLACK LIVES TAKEN: GEORGE FLOYD, BREONNA TAYLOR, AND AHMAUD ARBERY</h3>
                             <p>What's happening and what you can do.</p>
                         </div>
                     </a>
                 </div>
-            
+
                 <div class="carousel-item">
                     <a href="https://www.dosomething.org/us/facts/11-facts-about-racial-discrimination">
                         <img src="https://images.ctfassets.net/81iqaqpfd8fy/73DcCVqNGrT1Gg5msXU2zk/50285a84c2b177107bdc53d674afc06c/GettyImages-1042424400.jpg?h=620&w=1440"
-                            alt="Black Teen" class="media-img">
+                            alt="Black Teen" class="d-block w-100">
                         <div class="carousel-caption text-white">
                             <h3>11 FACTS ABOUT RACIAL DISCRIMINATION</h3>
                             <p>And what you can do about it.</p>
                         </div>
                     </a>
                 </div>
-        
+
                 <div class="carousel-item">
-                    <a href="https://www.deseret.com/opinion/2020/6/13/21289587/black-lives-matter-protests-racism-children-resources">
-                        <img src="https://cdn.vox-cdn.com/thumbor/2UrFxUIzm1oTuM8kh0kg-W-WOxA=/0x0:4100x2795/920x613/filters:focal(1722x1070:2378x1726):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/66930814/BLM_Protest_0610_ja_0437.0.jpg" 
-                            alt="Utah Protest" class="media-img">
+                    <a
+                        href="https://www.deseret.com/opinion/2020/6/13/21289587/black-lives-matter-protests-racism-children-resources">
+                        <img src="https://cdn.vox-cdn.com/thumbor/2UrFxUIzm1oTuM8kh0kg-W-WOxA=/0x0:4100x2795/920x613/filters:focal(1722x1070:2378x1726):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/66930814/BLM_Protest_0610_ja_0437.0.jpg"
+                            alt="Utah Protest" class="d-block w-100">
                         <div class="carousel-caption text-white">
                             <h3>Opinion: Parents shouldn’t shy away from discussing racism with their children</h3>
                         </div>
@@ -144,6 +150,19 @@
             </a>
         </div>
     </div>
-    
+    <!--js files-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="./index.js"></script>
 </body>
+
 </html>
