@@ -1,22 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Link to bootstrap-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!--Personal Style Sheet-->
-    <link rel="stylesheet" href="./style.css" media="screen" title="no title" charset="utf-8"> <!--styling for navbar-->
-    <link rel="stylesheet" href="./library.css" media="screen" title="no title" charset="utf-8"> <!---styling for library page-->
+    <link rel="stylesheet" href="./style.css" media="screen" title="no title" charset="utf-8">
+    <!--styling for navbar-->
+    <link rel="stylesheet" href="./library.css" media="screen" title="no title" charset="utf-8">
+    <!---styling for library page-->
     <!--Link to google fonts-->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
     <!--tab display-->
     <title>Ally App</title>
     <!--js files-->
     <script src="https://code.jquery.com/jquery.js"></script>
     <script src="./index.js"></script>
 </head>
+
 <body>
     <header>
         <!--Ally App logo will display on far left of every page-->
@@ -34,33 +40,36 @@
                 </button>
                 <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2 navbarNav">
                     <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active"><a href="#" class="text-secondary nav-link active">Home<span class="sr-only">(current)</span></a></li>
+                        <li class="nav-item active"><a href="#" class="text-secondary nav-link active">Home<span
+                                    class="sr-only">(current)</span></a></li>
                         <li class="nav-item"><a href="#" class="text-secondary nav-link">Library</a></li>
                         <li class="nav-item"><a href="#" class="text-secondary nav-link">Get Involved</a></li>
                         <li class="nav-item"><a href="#" class="text-secondary nav-link">Petitions</a></li>
                         <li class="nav-item"><a href="#" class="text-secondary nav-link">Need Help?</a></li>
                     </ul>
-                <div >
-                <div class="navbar-collapse collapse w-100 order-3 dual-collapse2 navbarNav">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <!--Search bar will display on every page (right justify)-->
-                            <div id="search-container" action="#">
-                                <button type="submit" id="search-button"><i class="fa fa-search"></i></button>
-                                <input type="text" placeholder="Search" name="search" id="search-input">
-                            </div>
-                        </li>
-                        <li class="nav-item">
-                            <!--Link to Login Page-->
-                            <a class="nav-link" href="#">
-                                <!--Avatar img displays in far right corner-->
-                                <div class="user-avatar-div">
-                                    <span class="icon-box"><i class="fa fa-user-o fa-xxs text-white"></i></span>
-                                    <img class="user-avatar" src="" />
-                                </div>
-                            </a> 
-                        </li>
-                    </ul>
+                    <div>
+                        <div class="navbar-collapse collapse w-100 order-3 dual-collapse2 navbarNav">
+                            <ul class="navbar-nav ml-auto">
+                                <li class="nav-item">
+                                    <!--Search bar will display on every page (right justify)-->
+                                    <div id="search-container" action="#">
+                                        <button type="submit" id="search-button"><i class="fa fa-search"></i></button>
+                                        <input type="text" placeholder="Search" name="search" id="search-input">
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <!--Link to Login Page-->
+                                    <a class="nav-link" href="#">
+                                        <!--Avatar img displays in far right corner-->
+                                        <div class="user-avatar-div">
+                                            <span class="icon-box"><i class="fa fa-user-o fa-xxs text-white"></i></span>
+                                            <img class="user-avatar" src="" />
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -78,7 +87,7 @@
                     <button class="btn lib-btn mb-3 text-secondary active" data-filter="0"> Show all</button>
                 </div>
                 <div class="col-4">
-                    <button class="btn lib-btn mb-3 text-secondary" data-filter="1"> Books</button>                
+                    <button class="btn lib-btn mb-3 text-secondary" data-filter="1"> Books</button>
                 </div>
                 <div class="col-4">
                     <button class="btn lib-btn mb-3 text-secondary" data-filter="2"> Childrens Books</button>
@@ -100,39 +109,134 @@
         <br>
         <div class="container library-content">
             <div id="filter-container row">
-                <div class="col-lg-6 filterDiv books" data-category="1" data-sort="value">
-                    <div class="item mr-3 mb-3 text-center">
-                        <img src="https://m.media-amazon.com/images/I/91NSKjk7UeL._AC_UY218_.jpg" >
-                        <h3>How to be an Antiracist</h3>
-                        <p>By Ibram X. Kendi</p>
-                        <p>Genre: Non-fiction</p>
-                        <span id="purchase-link"><a href="https://bookshop.org/books/how-to-be-an-antiracist/9780525509288,https://amzn.to/2XIR2Mx">Purchase</a>  ||  </span>
-                        <span id="amazon-link"><a href="https://www.amazon.com/How-Be-Antiracist-Ibram-Kendi/dp/0525509283/ref=sr_1_1?dchild=1&gclid=CjwKCAjw8pH3BRAXEiwA1pvMscppmvWZrwe0kb49RWOUjZuOeNH1mzJJJJAB5yihtEKo8QA6ffroUBoCiWgQAvD_BwE&hvadid=323093188714&hvdev=c&hvlocphy=9029751&hvnetw=g&hvqmt=e&hvrand=205750131275979184&hvtargid=kwd-606380095379&hydadcr=24631_10399645&keywords=how+to+be+an+antiracist&qid=1592070609&sr=8-1&tag=googhydr-20">Amazon</a></span>
+                <div class="col-12 filterDiv books" data-category="1" data-sort="value">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="item mr-3 mb-3 text-center">
+                                <img src="https://m.media-amazon.com/images/I/91NSKjk7UeL._AC_UY218_.jpg">
+                                <h3>How to be an Antiracist</h3>
+                                <p>By Ibram X. Kendi</p>
+                                <p>Genre: Non-fiction</p>
+                                <span id="purchase-link"><a
+                                        href="https://bookshop.org/books/how-to-be-an-antiracist/9780525509288,https://amzn.to/2XIR2Mx">Purchase</a>
+                                    || </span>
+                                <span id="amazon-link"><a
+                                        href="https://www.amazon.com/How-Be-Antiracist-Ibram-Kendi/dp/0525509283/ref=sr_1_1?dchild=1&gclid=CjwKCAjw8pH3BRAXEiwA1pvMscppmvWZrwe0kb49RWOUjZuOeNH1mzJJJJAB5yihtEKo8QA6ffroUBoCiWgQAvD_BwE&hvadid=323093188714&hvdev=c&hvlocphy=9029751&hvnetw=g&hvqmt=e&hvrand=205750131275979184&hvtargid=kwd-606380095379&hydadcr=24631_10399645&keywords=how+to+be+an+antiracist&qid=1592070609&sr=8-1&tag=googhydr-20">Amazon</a></span>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="item mr-3 mb-3 text-center">
+                                <img src="https://m.media-amazon.com/images/I/516x+B07uFL._AC_UY218_.jpg"
+                                    alt="book cover">
+                                <h3>Me and White Supremacy: Combat Racism, Change the World & Become a Good Ancestor
+                                </h3>
+                                <p>By Layla F. Saad</p>
+                                <p>Genre: Non-fiction</p>
+                                <span id="purchase-link"><a
+                                        href="https://rep.club/collections/books/products/me-and-white-supremacy,https://amzn.to/3h9L9j9">Purchase</a>
+                                    || </span>
+                                <span id="amazon-link"><a
+                                        href="https://www.amazon.com/Me-White-Supremacy-Combat-Ancestor-ebook/dp/B07Y5PHNXB/ref=sr_1_1?crid=1KCUB9RLN747I&dchild=1&keywords=me+and+white+supremacy+book&qid=1592070637&sprefix=me+a%2Caps%2C196&sr=8-1">Amazon</a></span>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="item mr-3 mb-3 text-center">
+                                <img src="https://m.media-amazon.com/images/I/61ezaAgMnyL._AC_UY218_.jpg"
+                                    alt="book cover">
+                                <h3>So You Want to Talk About Race</h3>
+                                <p>By Ijeoma Oluo</p>
+                                <p>Genre: Non-fiction</p>
+                                <span id="purchase-link"><a
+                                        href="https://www.hachettebookgroup.com/titles/ijeoma-oluo/so-you-want-to-talk-about-race/9781580056779/,https://amzn.to/2XIBeJI">Purchase</a>
+                                    || </span>
+                                <span id="amazon-link"><a
+                                        href="https://www.amazon.com/You-Want-Talk-About-Race/dp/1580058825/ref=sr_1_1?crid=2BQ0JECMJGGHP&dchild=1&keywords=so+you+want+to+talk+about+race&qid=1592070657&sprefix=so+you%2Caps%2C192&sr=8-1">Amazon</a></span>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="item mr-3 mb-3 text-center">
+                                <img src="https://m.media-amazon.com/images/I/91NSKjk7UeL._AC_UY218_.jpg">
+                                <h3>How to be an Antiracist</h3>
+                                <p>By Ibram X. Kendi</p>
+                                <p>Genre: Non-fiction</p>
+                                <span id="purchase-link"><a
+                                        href="https://bookshop.org/books/how-to-be-an-antiracist/9780525509288,https://amzn.to/2XIR2Mx">Purchase</a>
+                                    || </span>
+                                <span id="amazon-link"><a
+                                        href="https://www.amazon.com/How-Be-Antiracist-Ibram-Kendi/dp/0525509283/ref=sr_1_1?dchild=1&gclid=CjwKCAjw8pH3BRAXEiwA1pvMscppmvWZrwe0kb49RWOUjZuOeNH1mzJJJJAB5yihtEKo8QA6ffroUBoCiWgQAvD_BwE&hvadid=323093188714&hvdev=c&hvlocphy=9029751&hvnetw=g&hvqmt=e&hvrand=205750131275979184&hvtargid=kwd-606380095379&hydadcr=24631_10399645&keywords=how+to+be+an+antiracist&qid=1592070609&sr=8-1&tag=googhydr-20">Amazon</a></span>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="item mr-3 mb-3 text-center">
+                                <img src="https://m.media-amazon.com/images/I/91NSKjk7UeL._AC_UY218_.jpg">
+                                <h3>How to be an Antiracist</h3>
+                                <p>By Ibram X. Kendi</p>
+                                <p>Genre: Non-fiction</p>
+                                <span id="purchase-link"><a
+                                        href="https://bookshop.org/books/how-to-be-an-antiracist/9780525509288,https://amzn.to/2XIR2Mx">Purchase</a>
+                                    || </span>
+                                <span id="amazon-link"><a
+                                        href="https://www.amazon.com/How-Be-Antiracist-Ibram-Kendi/dp/0525509283/ref=sr_1_1?dchild=1&gclid=CjwKCAjw8pH3BRAXEiwA1pvMscppmvWZrwe0kb49RWOUjZuOeNH1mzJJJJAB5yihtEKo8QA6ffroUBoCiWgQAvD_BwE&hvadid=323093188714&hvdev=c&hvlocphy=9029751&hvnetw=g&hvqmt=e&hvrand=205750131275979184&hvtargid=kwd-606380095379&hydadcr=24631_10399645&keywords=how+to+be+an+antiracist&qid=1592070609&sr=8-1&tag=googhydr-20">Amazon</a></span>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="item mr-3 mb-3 text-center">
+                                <img src="https://m.media-amazon.com/images/I/516x+B07uFL._AC_UY218_.jpg"
+                                    alt="book cover">
+                                <h3>Me and White Supremacy: Combat Racism, Change the World & Become a Good Ancestor
+                                </h3>
+                                <p>By Layla F. Saad</p>
+                                <p>Genre: Non-fiction</p>
+                                <span id="purchase-link"><a
+                                        href="https://rep.club/collections/books/products/me-and-white-supremacy,https://amzn.to/3h9L9j9">Purchase</a>
+                                    || </span>
+                                <span id="amazon-link"><a
+                                        href="https://www.amazon.com/Me-White-Supremacy-Combat-Ancestor-ebook/dp/B07Y5PHNXB/ref=sr_1_1?crid=1KCUB9RLN747I&dchild=1&keywords=me+and+white+supremacy+book&qid=1592070637&sprefix=me+a%2Caps%2C196&sr=8-1">Amazon</a></span>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="item mr-3 mb-3 text-center">
+                                <img src="https://m.media-amazon.com/images/I/61ezaAgMnyL._AC_UY218_.jpg"
+                                    alt="book cover">
+                                <h3>So You Want to Talk About Race</h3>
+                                <p>By Ijeoma Oluo</p>
+                                <p>Genre: Non-fiction</p>
+                                <span id="purchase-link"><a
+                                        href="https://www.hachettebookgroup.com/titles/ijeoma-oluo/so-you-want-to-talk-about-race/9781580056779/,https://amzn.to/2XIBeJI">Purchase</a>
+                                    || </span>
+                                <span id="amazon-link"><a
+                                        href="https://www.amazon.com/You-Want-Talk-About-Race/dp/1580058825/ref=sr_1_1?crid=2BQ0JECMJGGHP&dchild=1&keywords=so+you+want+to+talk+about+race&qid=1592070657&sprefix=so+you%2Caps%2C192&sr=8-1">Amazon</a></span>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="item mr-3 mb-3 text-center">
+                                <img src="https://m.media-amazon.com/images/I/91NSKjk7UeL._AC_UY218_.jpg">
+                                <h3>How to be an Antiracist</h3>
+                                <p>By Ibram X. Kendi</p>
+                                <p>Genre: Non-fiction</p>
+                                <span id="purchase-link"><a
+                                        href="https://bookshop.org/books/how-to-be-an-antiracist/9780525509288,https://amzn.to/2XIR2Mx">Purchase</a>
+                                    || </span>
+                                <span id="amazon-link"><a
+                                        href="https://www.amazon.com/How-Be-Antiracist-Ibram-Kendi/dp/0525509283/ref=sr_1_1?dchild=1&gclid=CjwKCAjw8pH3BRAXEiwA1pvMscppmvWZrwe0kb49RWOUjZuOeNH1mzJJJJAB5yihtEKo8QA6ffroUBoCiWgQAvD_BwE&hvadid=323093188714&hvdev=c&hvlocphy=9029751&hvnetw=g&hvqmt=e&hvrand=205750131275979184&hvtargid=kwd-606380095379&hydadcr=24631_10399645&keywords=how+to+be+an+antiracist&qid=1592070609&sr=8-1&tag=googhydr-20">Amazon</a></span>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
                     </div>
-                    <div class="item mr-3 mb-3 text-center">
-                        <img src="https://m.media-amazon.com/images/I/516x+B07uFL._AC_UY218_.jpg" alt="book cover">
-                        <h3>Me and White Supremacy: Combat Racism, Change the World & Become a Good Ancestor</h3>
-                        <p>By Layla F. Saad</p>
-                        <p>Genre: Non-fiction</p>
-                        <span id="purchase-link"><a href="https://rep.club/collections/books/products/me-and-white-supremacy,https://amzn.to/3h9L9j9">Purchase</a>  ||  </span>
-                        <span id="amazon-link"><a href="https://www.amazon.com/Me-White-Supremacy-Combat-Ancestor-ebook/dp/B07Y5PHNXB/ref=sr_1_1?crid=1KCUB9RLN747I&dchild=1&keywords=me+and+white+supremacy+book&qid=1592070637&sprefix=me+a%2Caps%2C196&sr=8-1">Amazon</a></span>
-                    </div>
-                    <div class="item mr-3 mb-3 text-center">
-                        <img src="https://m.media-amazon.com/images/I/61ezaAgMnyL._AC_UY218_.jpg" alt="book cover">
-                        <h3>So You Want to Talk About Race</h3>
-                        <p>By Ijeoma Oluo</p>
-                        <p>Genre: Non-fiction</p>
-                        <span id="purchase-link"><a href="https://www.hachettebookgroup.com/titles/ijeoma-oluo/so-you-want-to-talk-about-race/9781580056779/,https://amzn.to/2XIBeJI">Purchase</a>  ||  </span>
-                        <span id="amazon-link"><a href="https://www.amazon.com/You-Want-Talk-About-Race/dp/1580058825/ref=sr_1_1?crid=2BQ0JECMJGGHP&dchild=1&keywords=so+you+want+to+talk+about+race&qid=1592070657&sprefix=so+you%2Caps%2C192&sr=8-1">Amazon</a></span>
-                    </div>
-                    <div class="item mr-3 mb-3 text-center">
-                        <img src="https://m.media-amazon.com/images/I/91NSKjk7UeL._AC_UY218_.jpg" >
-                        <h3>How to be an Antiracist</h3>
-                        <p>By Ibram X. Kendi</p>
-                        <p>Genre: Non-fiction</p>
-                        <span id="purchase-link"><a href="https://bookshop.org/books/how-to-be-an-antiracist/9780525509288,https://amzn.to/2XIR2Mx">Purchase</a>  ||  </span>
-                        <span id="amazon-link"><a href="https://www.amazon.com/How-Be-Antiracist-Ibram-Kendi/dp/0525509283/ref=sr_1_1?dchild=1&gclid=CjwKCAjw8pH3BRAXEiwA1pvMscppmvWZrwe0kb49RWOUjZuOeNH1mzJJJJAB5yihtEKo8QA6ffroUBoCiWgQAvD_BwE&hvadid=323093188714&hvdev=c&hvlocphy=9029751&hvnetw=g&hvqmt=e&hvrand=205750131275979184&hvtargid=kwd-606380095379&hydadcr=24631_10399645&keywords=how+to+be+an+antiracist&qid=1592070609&sr=8-1&tag=googhydr-20">Amazon</a></span>
-                    </div>
+
                     <!-- {{#each books}}
                         <div class="item mr-3 mb-3 text-center">
                             <h3>{{title}}</h3>
@@ -143,23 +247,71 @@
                         </div>
                     {{/each}} -->
                 </div>
-                <div class="col-lg-6 filterDiv childrensBooks" data-category="2" data-sort="value">
-                    <div class="item mr-3 mb-3 text-center">
-                        <img src="https://m.media-amazon.com/images/I/71gUIPFYzbL._AC_UY218_.jpg" alt="book cover">
-                        <h3>A Kid's Book About Racism</h3>
-                        <p>By Jelani Memory</p>
-                        <p>Genre: Children</p>
-                        <span id="purchase-link"><a href="https://akidsbookabout.com/collections/kids-books/products/a-kids-book-about-racism">Purchase</a>  ||  </span>
-                        <span id="amazon-link"><a href="https://www.amazon.com/Kids-Book-About-Racism-ebook/dp/B088GYYHJX/ref=sr_1_4?crid=GO31E0884RSA&dchild=1&keywords=a+kids+book+about+racism&qid=1592070945&sprefix=a+kids+book%2Caps%2C606&sr=8-4">Amazon</a></span>
+                <div class="col-12 filterDiv childrensBooks" data-category="2" data-sort="value">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="item mr-3 mb-3 text-center">
+                                <img src="https://m.media-amazon.com/images/I/71gUIPFYzbL._AC_UY218_.jpg"
+                                    alt="book cover">
+                                <h3>A Kid's Book About Racism</h3>
+                                <p>By Jelani Memory</p>
+                                <p>Genre: Children</p>
+                                <span id="purchase-link"><a
+                                        href="https://akidsbookabout.com/collections/kids-books/products/a-kids-book-about-racism">Purchase</a>
+                                    || </span>
+                                <span id="amazon-link"><a
+                                        href="https://www.amazon.com/Kids-Book-About-Racism-ebook/dp/B088GYYHJX/ref=sr_1_4?crid=GO31E0884RSA&dchild=1&keywords=a+kids+book+about+racism&qid=1592070945&sprefix=a+kids+book%2Caps%2C606&sr=8-4">Amazon</a></span>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="item mr-3 mb-3 text-center">
+                                <img src="https://m.media-amazon.com/images/I/71NDfLoNhiL._AC_UY218_.jpg"
+                                    alt="book cover">
+                                <h3>Sisters: Venus & Serena Williams</h3>
+                                <p>By Nadia L Hohn</p>
+                                <p>Genre: Children</p>
+                                <span id="purchase-link"><a
+                                        href="https://catalog.slcolibrary.org/polaris/search/searchresults.aspx?ctx=1.1033.0.0.1&type=Keyword&term=941639&by=CN&sort=RELEVANCE&limit=TOM=*&query=&page=0&searchid=1">Checkout</a>
+                                    || </span>
+                                <span id="amazon-link"><a
+                                        href="https://www.amazon.com/Sisters-Serena-Williams-Jeanette-Winter/dp/1534431217">Amazon</a></span>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="item mr-3 mb-3 text-center">
+                                <img src="https://m.media-amazon.com/images/I/71gUIPFYzbL._AC_UY218_.jpg"
+                                    alt="book cover">
+                                <h3>A Kid's Book About Racism</h3>
+                                <p>By Jelani Memory</p>
+                                <p>Genre: Children</p>
+                                <span id="purchase-link"><a
+                                        href="https://akidsbookabout.com/collections/kids-books/products/a-kids-book-about-racism">Purchase</a>
+                                    || </span>
+                                <span id="amazon-link"><a
+                                        href="https://www.amazon.com/Kids-Book-About-Racism-ebook/dp/B088GYYHJX/ref=sr_1_4?crid=GO31E0884RSA&dchild=1&keywords=a+kids+book+about+racism&qid=1592070945&sprefix=a+kids+book%2Caps%2C606&sr=8-4">Amazon</a></span>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="item mr-3 mb-3 text-center">
+                                <img src="https://m.media-amazon.com/images/I/71NDfLoNhiL._AC_UY218_.jpg"
+                                    alt="book cover">
+                                <h3>Sisters: Venus & Serena Williams</h3>
+                                <p>By Nadia L Hohn</p>
+                                <p>Genre: Children</p>
+                                <span id="purchase-link"><a
+                                        href="https://catalog.slcolibrary.org/polaris/search/searchresults.aspx?ctx=1.1033.0.0.1&type=Keyword&term=941639&by=CN&sort=RELEVANCE&limit=TOM=*&query=&page=0&searchid=1">Checkout</a>
+                                    || </span>
+                                <span id="amazon-link"><a
+                                        href="https://www.amazon.com/Sisters-Serena-Williams-Jeanette-Winter/dp/1534431217">Amazon</a></span>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
                     </div>
-                    <div class="item mr-3 mb-3 text-center">
-                        <img src="https://m.media-amazon.com/images/I/71NDfLoNhiL._AC_UY218_.jpg" alt="book cover">
-                        <h3>Sisters: Venus & Serena Williams</h3>
-                        <p>By Nadia L Hohn</p>
-                        <p>Genre: Children</p>
-                        <span id="purchase-link"><a href="https://catalog.slcolibrary.org/polaris/search/searchresults.aspx?ctx=1.1033.0.0.1&type=Keyword&term=941639&by=CN&sort=RELEVANCE&limit=TOM=*&query=&page=0&searchid=1">Checkout</a>  ||  </span>
-                        <span id="amazon-link"><a href="https://www.amazon.com/Sisters-Serena-Williams-Jeanette-Winter/dp/1534431217">Amazon</a></span>
-                    </div>
+
+
                     <!-- {{#each childrensBooks}}
                         <div class="item mr-3 mb-3 text-center">
                             <h3>{{title}}</h3>
@@ -169,24 +321,65 @@
                         </div>
                     {{/each}} -->
                 </div>
-                <div class="col-lg-6 filterDiv podcasts" data-category="3" data-sort="value">
-                    <div class="item mr-3 mb-3 text-center">
-                        <img src="https://i.ytimg.com/vi/Mqrhn8khGLM/maxresdefault.jpg">
-                        <h3>Explained</h3>
-                        <p>Found on Netflix</p>
-                        <p id="purchase-link"><a href="#">Watch</a></p>
-                    </div>
-                    <div class="item mr-3 mb-3 text-center">
-                        <img src="https://cdn.cnn.com/cnnnext/dam/assets/200603172754-black-lives-matter-youtube-thumbnail-large-169.jpg">
-                        <h3>Views for a Vision</h3>
-                        <p>Found on Netflix</p>
-                        <p id="purchase-link"><a href="#">Watch</a></p>
-                    </div>
-                    <div class="item mr-3 mb-3 text-center">
-                        <img src="https://upload.wikimedia.org/wikipedia/en/6/6b/13th_%28film%29.png">
-                        <h3>13th</h3>
-                        <p>Found on Netflix</p>
-                        <p id="purchase-link"><a href="#">Watch</a></p>
+                <div class="col-12 filterDiv podcasts" data-category="3" data-sort="value">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="item mr-3 mb-3 text-center">
+                                <img src="https://i.ytimg.com/vi/Mqrhn8khGLM/maxresdefault.jpg">
+                                <h3>Explained</h3>
+                                <p>Found on Netflix</p>
+                                <p id="purchase-link"><a href="#">Watch</a></p>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="item mr-3 mb-3 text-center">
+                                <img
+                                    src="https://cdn.cnn.com/cnnnext/dam/assets/200603172754-black-lives-matter-youtube-thumbnail-large-169.jpg">
+                                <h3>Views for a Vision</h3>
+                                <p>Found on Netflix</p>
+                                <p id="purchase-link"><a href="#">Watch</a></p>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="item mr-3 mb-3 text-center">
+                                <img src="https://i.ytimg.com/vi/Mqrhn8khGLM/maxresdefault.jpg">
+                                <h3>Explained</h3>
+                                <p>Found on Netflix</p>
+                                <p id="purchase-link"><a href="#">Watch</a></p>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="item mr-3 mb-3 text-center">
+                                <img
+                                    src="https://cdn.cnn.com/cnnnext/dam/assets/200603172754-black-lives-matter-youtube-thumbnail-large-169.jpg">
+                                <h3>Views for a Vision</h3>
+                                <p>Found on Netflix</p>
+                                <p id="purchase-link"><a href="#">Watch</a></p>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="item mr-3 mb-3 text-center">
+                                <img src="https://i.ytimg.com/vi/Mqrhn8khGLM/maxresdefault.jpg">
+                                <h3>Explained</h3>
+                                <p>Found on Netflix</p>
+                                <p id="purchase-link"><a href="#">Watch</a></p>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="item mr-3 mb-3 text-center">
+                                <img
+                                    src="https://cdn.cnn.com/cnnnext/dam/assets/200603172754-black-lives-matter-youtube-thumbnail-large-169.jpg">
+                                <h3>Views for a Vision</h3>
+                                <p>Found on Netflix</p>
+                                <p id="purchase-link"><a href="#">Watch</a></p>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
                     </div>
                     <!-- {{#each podcasts}}
                         <div class="item text-center">
@@ -196,7 +389,7 @@
                         </div>
                     {{/each}} -->
                 </div>
-                <div class="col-lg-6 filterDiv articles" data-category="4" data-sort="value">
+                <div class="col-12 filterDiv articles" data-category="4" data-sort="value">
                     <!-- {{#each articles}}
                         <div class="item text-center">
                             <h3>{{title}}</h3>
@@ -205,25 +398,94 @@
                         </div>
                     {{/each}} -->
                 </div>
-                <div class="col-lg-6 filterDiv films" data-category="5" data-sort="value">
-                    <div class="item mr-3 mb-3 text-center">
-                        <img src="https://i.ytimg.com/vi/Mqrhn8khGLM/maxresdefault.jpg">
-                        <h3>Explained</h3>
-                        <p>Found on Netflix</p>
-                        <p id="purchase-link"><a href="#">Watch</a></p>
+                <div class="col-12 filterDiv films" data-category="5" data-sort="value">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="item mr-3 mb-3 text-center">
+                                <img src="https://i.ytimg.com/vi/Mqrhn8khGLM/maxresdefault.jpg">
+                                <h3>Explained</h3>
+                                <p>Found on Netflix</p>
+                                <p id="purchase-link"><a href="#">Watch</a></p>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="item mr-3 mb-3 text-center">
+                                <img
+                                    src="https://cdn.cnn.com/cnnnext/dam/assets/200603172754-black-lives-matter-youtube-thumbnail-large-169.jpg">
+                                <h3>Views for a Vision</h3>
+                                <p>Found on Netflix</p>
+                                <p id="purchase-link"><a href="#">Watch</a></p>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="item mr-3 mb-3 text-center">
+                                <img src="https://upload.wikimedia.org/wikipedia/en/6/6b/13th_%28film%29.png">
+                                <h3>13th</h3>
+                                <p>Found on Netflix</p>
+                                <p id="purchase-link"><a href="#">Watch</a></p>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="item mr-3 mb-3 text-center">
+                                <img src="https://i.ytimg.com/vi/Mqrhn8khGLM/maxresdefault.jpg">
+                                <h3>Explained</h3>
+                                <p>Found on Netflix</p>
+                                <p id="purchase-link"><a href="#">Watch</a></p>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="item mr-3 mb-3 text-center">
+                                <img
+                                    src="https://cdn.cnn.com/cnnnext/dam/assets/200603172754-black-lives-matter-youtube-thumbnail-large-169.jpg">
+                                <h3>Views for a Vision</h3>
+                                <p>Found on Netflix</p>
+                                <p id="purchase-link"><a href="#">Watch</a></p>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="item mr-3 mb-3 text-center">
+                                <img src="https://upload.wikimedia.org/wikipedia/en/6/6b/13th_%28film%29.png">
+                                <h3>13th</h3>
+                                <p>Found on Netflix</p>
+                                <p id="purchase-link"><a href="#">Watch</a></p>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="item mr-3 mb-3 text-center">
+                                <img src="https://i.ytimg.com/vi/Mqrhn8khGLM/maxresdefault.jpg">
+                                <h3>Explained</h3>
+                                <p>Found on Netflix</p>
+                                <p id="purchase-link"><a href="#">Watch</a></p>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="item mr-3 mb-3 text-center">
+                                <img
+                                    src="https://cdn.cnn.com/cnnnext/dam/assets/200603172754-black-lives-matter-youtube-thumbnail-large-169.jpg">
+                                <h3>Views for a Vision</h3>
+                                <p>Found on Netflix</p>
+                                <p id="purchase-link"><a href="#">Watch</a></p>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="item mr-3 mb-3 text-center">
+                                <img src="https://upload.wikimedia.org/wikipedia/en/6/6b/13th_%28film%29.png">
+                                <h3>13th</h3>
+                                <p>Found on Netflix</p>
+                                <p id="purchase-link"><a href="#">Watch</a></p>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
                     </div>
-                    <div class="item mr-3 mb-3 text-center">
-                        <img src="https://cdn.cnn.com/cnnnext/dam/assets/200603172754-black-lives-matter-youtube-thumbnail-large-169.jpg">
-                        <h3>Views for a Vision</h3>
-                        <p>Found on Netflix</p>
-                        <p id="purchase-link"><a href="#">Watch</a></p>
-                    </div>
-                    <div class="item mr-3 mb-3 text-center">
-                        <img src="https://upload.wikimedia.org/wikipedia/en/6/6b/13th_%28film%29.png">
-                        <h3>13th</h3>
-                        <p>Found on Netflix</p>
-                        <p id="purchase-link"><a href="#">Watch</a></p>
-                    </div>
+
                     <!-- {{#each toWatch}}
                         <div class="item text-center">
                             <h3>{{title}}</h3>
@@ -238,4 +500,5 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="./library.js"></script>
 </body>
+
 </html>
