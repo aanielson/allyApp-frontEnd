@@ -6,7 +6,7 @@
 }
 #filter-menu button:hover {
     border-bottom: solid;
-    border-bottom-color: yellow;
+    border-bottom-color: rgb(253, 232, 208);
 }
 .filterDiv {
     display: none;
