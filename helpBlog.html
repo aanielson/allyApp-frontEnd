@@ -28,9 +28,9 @@
         <nav class="homepage-nav navbar navbar-expand-md static-top p-0 fixed-top" id="navlinks">
             <div class="container-fluid">
                 <!--Ally App Logo?-->
-                <div id="logo" class="text-dark">
+                <div id="logo" class="text-dark mr-3">
                     <h4>The</h4>
-                    <h4>Ally</h4>
+                    <h4><strong>Ally</strong></h4>
                     <h4 class="text-secondary">App</h4>
                 </div>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbarNav">
@@ -38,35 +38,25 @@
                 </button>
                 <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2 navbarNav">
                     <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active"><a href="./index.html" class="text-secondary nav-link active">Home<span
+                        <li class="nav-item active"><a href="/" class="text-secondary nav-link active">Home<span
                                     class="sr-only">(current)</span></a></li>
-                        <li class="nav-item"><a href="./library.html" class="text-secondary nav-link">Library</a></li>
+                        <li class="nav-item"><a href="/library" class="text-secondary nav-link">Library</a></li>
                         <li class="nav-item"><a href="#" class="text-secondary nav-link">Petitions</a></li>
-                        <li class="nav-item"><a href="./helpBlog.html" class="text-secondary nav-link">Need Help?</a></li>
+                        <li class="nav-item"><a href="/helpBlog" class="text-secondary nav-link">Need Help?</a></li>
                     </ul>
-                    <div>
-                        <div class="navbar-collapse collapse w-100 order-3 dual-collapse2 navbarNav">
-                            <ul class="navbar-nav ml-auto">
-                                <li class="nav-item">
-                                    <!--Search bar will display on every page (right justify)-->
-                                    <div id="search-container" action="#">
-                                        <button type="submit" id="search-button"><i class="fa fa-search"></i></button>
-                                        <input type="text" placeholder="Search" name="search" id="search-input">
-                                    </div>
-                                </li>
-                                <li class="nav-item">
-                                    <!--Link to Login Page-->
-                                    <a class="nav-link" href="#">
-                                        <!--Avatar img displays in far right corner-->
-                                        <div class="user-avatar-div">
-                                            <span class="icon-box"><i class="fa fa-user-o fa-xxs text-white"></i></span>
-                                            <img class="user-avatar" src="" />
-                                        </div>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+                </div>
+                <div class="navbar-collapse collapse w-100 order-3 dual-collapse2 navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <!--Link to Login Page-->
+                            <a class="nav-link login-link" href="/users/login">
+                                <!--Avatar img displays in far right corner-->
+                                <div class="user-avatar-div">
+                                    <span id="loggedin">Login/Register</span>
+                                </div>
+                            </a> 
+                        </li>
+                    </ul>
                 </div>
             </div>
         </nav>
