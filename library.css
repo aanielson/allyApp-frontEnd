@@ -6,7 +6,7 @@
 }
 #filter-menu button:hover {
     border-bottom: solid;
-    border-bottom-color: gray;
+    border-bottom-color: yellow;
 }
 .filterDiv {
     display: none;
@@ -35,4 +35,7 @@
     text-decoration: none;
     font-size: 17px;
     color: darkgray;
+}
+.library h1 {
+    font-size: 40pt;
 }
