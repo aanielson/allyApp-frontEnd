@@ -1,12 +1,18 @@
 .lib-btn {
-    font-size: 13pt;
-    background-color: #ddd;
-    min-height: 80px;
+    font-size: 10pt;
+    background-color: rgb(242, 242, 242);
+    box-shadow: .5px .5px rgb(9, 89, 118);
+    color: black;
+    /* background-color: rgb(174, 226, 240); */
+
+    /* background-color: rgb(200, 252, 199); */
+    /* color: rgb(45, 225, 132); */
+    min-height: 50px;
     width: 100%;
 }
 #filter-menu button:hover {
     border-bottom: solid;
-    border-bottom-color: rgb(253, 232, 208);
+    border-bottom-color: rgb(83, 191, 230);
 }
 .filterDiv {
     display: none;
@@ -23,7 +29,9 @@
     max-width: 100%;
 }
 .filterDiv .item {
-    background-color: whitesmoke;
+    background-color: rgb(242, 242, 242);
+    /* background-color: rgb(254, 254, 199); */
+    box-shadow: .5px .5px rgb(9, 89, 118);
     padding: 15px;
     border: none;
     border-radius: 5%;

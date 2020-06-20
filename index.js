@@ -6,8 +6,7 @@ function scrollFunction() {
     document.getElementById("navlinks").style.height = "100px";
     // document.getElementById("logo").style.display = "none";
     // document.getElementById("logo2").style.display = "block";
-    document.getElementById("navlinks").style.backgroundColor = "lightgray";
-  
+    document.getElementById("navlinks").style.backgroundColor = "rgb(0, 176, 240)";
   } else {
     document.getElementById("navlinks").style.backgroundColor = "transparent";
     document.getElementById("logo").style.display = "block";

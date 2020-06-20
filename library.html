@@ -30,32 +30,29 @@
         <nav class="homepage-nav navbar navbar-expand-md static-top p-0 fixed-top" id="navlinks">
             <div class="container-fluid">
                 <!--Ally App Logo?-->
-                <div id="logo" class="text-dark mr-3">
+                <div id="logo" class="text-white mr-3 mt-2">
                     <h4>The</h4>
                     <h4><strong>Ally</strong></h4>
-                    <h4 class="text-secondary">App</h4>
+                    <h4 class="">App</h4>
                 </div>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbarNav">
-                    <span class="text-secondary navbar-toggler-icon"></span>
+                    <span class="text-white navbar-toggler-icon"></span>
                 </button>
                 <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2 navbarNav">
                     <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active"><a href="/" class="text-secondary nav-link active">Home<span
+                        <li class="nav-item active"><a href="/" class="text-white nav-link active">Home<span
                                     class="sr-only">(current)</span></a></li>
-                        <li class="nav-item"><a href="/library" class="text-secondary nav-link">Library</a></li>
-                        <li class="nav-item"><a href="#" class="text-secondary nav-link">Petitions</a></li>
-                        <li class="nav-item"><a href="/helpBlog" class="text-secondary nav-link">Need Help?</a></li>
+                        <li class="nav-item"><a href="/library" class="text-white nav-link">Library</a></li>
+                        <li class="nav-item"><a href="#" class="text-white nav-link">Petitions</a></li>
+                        <li class="nav-item"><a href="/helpBlog" class="text-white nav-link">Need Help?</a></li>
                     </ul>
                 </div>
                 <div class="navbar-collapse collapse w-100 order-3 dual-collapse2 navbarNav">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
                             <!--Link to Login Page-->
-                            <a class="nav-link login-link" href="/users/login">
-                                <!--Avatar img displays in far right corner-->
-                                <div class="user-avatar-div">
-                                    <span id="loggedin">Login/Register</span>
-                                </div>
+                            <a class="nav-link login-link text-white" href="/users/login">
+                                <span id="loggedin">Login/Register</span>
                             </a>
                         </li>
                     </ul>
@@ -64,33 +61,31 @@
         </nav>
     </header>
     <!--Initial section with image-->
-    <img src="./home.png" alt="fists" id="fists" />
+    <img src="./allyAppBanner-blue.png" alt="fists" id="fists" />
     <br>
     <br>
     <div class="library main container">
-        <h1 class="text-center mb-5 mt-5"><strong>Library</strong></h1>
+        <h1 class="text-center mb-5 mt-5 text-body"><strong>Library</strong></h1>
         <!--Planning on using https://www.w3schools.com/bootstrap/bootstrap_filters.asp to apply jQuery filter-->
         <div id="filter-menu">
-            <div class="row ">
-                <div class="col-4">
-                    <button class="btn lib-btn mb-3 text-secondary active" data-filter="0"> Show all</button>
-                </div>
-                <div class="col-4">
-                    <button class="btn lib-btn mb-3 text-secondary" data-filter="1"> Books</button>
-                </div>
-                <div class="col-4">
-                    <button class="btn lib-btn mb-3 text-secondary" data-filter="2"> Childrens Books</button>
-                </div>
-            </div>
             <div class="row">
-                <div class="col-4">
-                    <button class="btn lib-btn mb-3 text-secondary" data-filter="3"> Podcasts</button>
+                <div class="col-2">
+                    <button class="btn lib-btn mb-3 text-body active" data-filter="0">Show all</button>
                 </div>
-                <div class="col-4">
-                    <button class="btn lib-btn mb-3 text-secondary" data-filter="4"> Articles</button>
+                <div class="col-2">
+                    <button class="btn lib-btn mb-3 text-body" data-filter="1">Books</button>
                 </div>
-                <div class="col-4">
-                    <button class="btn lib-btn mb-3 text-secondary" data-filter="5"> Films</button>
+                <div class="col-2">
+                    <button class="btn lib-btn mb-3 text-body" data-filter="2">For Kids</button>
+                </div>
+                <div class="col-2">
+                    <button class="btn lib-btn mb-3 text-body" data-filter="3">Podcasts</button>
+                </div>
+                <div class="col-2">
+                    <button class="btn lib-btn mb-3 text-body" data-filter="4">Articles</button>
+                </div>
+                <div class="col-2">
+                    <button class="btn lib-btn mb-3 text-body" data-filter="5">Films</button>
                 </div>
             </div>
         </div>
