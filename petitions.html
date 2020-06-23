@@ -11,11 +11,12 @@
     <!--Personal Style Sheet-->
     <link rel="stylesheet" href="./style.css" media="screen" title="no title" charset="utf-8">
     <link rel="stylesheet" href="./helpBlog.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="./petitions.css" media="screen" title="no title" charset="utf-8">
     <!--Link to google fonts-->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&display=swap"
         rel="stylesheet">
     <!--tab display-->
-    <title>Request Help</title>
+    <title>Petitions</title>
     <!--js files-->
     <script src="https://code.jquery.com/jquery.js"></script>
     <script src="./index.js"></script>
@@ -65,95 +66,116 @@
     <img src="./allyAppBanner-blue.png" alt="fists" id="fists" />
     <br>
     <br>
-    <div class="container">
-        <div class="card ally-box text-center">
-            <h1 id="ally" class="display-1 ally">Ally</h1>
-            <blockquote class="blockquote mb-0">
-                <h4 id="pos" class="font-italic noun">noun:</h4>
-                <p id="definition">One that is associated with another as a helper; a person or group that
-                    provides assistance and support in an ongoing effort, activity, or struggle.
-                </p>
-                <h4 id="pos" class="font-italic verb">verb:</h4>
-                <p id="definition">To unite or form a connection or relation between; associate.
-                </p>
-                <footer class="blockquote-footer text-secondary">
-                    <small>
-                        <cite title="Source Title" class="text-secondary">Merriam-Webster</cite>
-                    </small>
-                </footer>
-            </blockquote>
+    <div class="container petition-box">
+        <div class="box text-center">
+            <h1>Petitions</h1>
+            <h3>Submit a petition.</h3>
         </div>
-    </div>
-    <div class="container help-box">
-        <div class="mt-5" id="request-section">
-           <h2 class="text-center" id="ally1">Need help?</h2>
-            <h4 class="text-center" id="ally2">Submit a request for help below!</h4>
-            <div class="row">
-                <div class="col-md-12 col-sm-4 text-center" id="filter-menu">
-                    <div class="help-login-protected">
-                        <!-- Button trigger modal -->
-                        <button type="button" class="btn mt-2 mb-2" id="help-post"
-                            onclick="window.location='/users/login'">
-                            Login/Register
-                        </button>
-                    </div>
+        <div class="row mb-4">
+            <div class="col-md-12 col-sm-6 text-center" id="filter-menu">
+                <div class="petition-login-protected">
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn" id="petition-post"
+                        onclick="window.location='/users/login'">
+                        Login/Register
+                    </button>
                 </div>
-            </div> 
+            </div>
         </div>
-        
-
         <!-- Form Modal -->
         <div class="modal fade" id="staticBackdrop" data-backdrop="static" tabindex="-1" role="dialog"
             aria-labelledby="staticBackdropLabel" aria-hidden="true">
             <div class="modal-dialog modal-lg" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="staticBackdropLabel">Request Help</h5>
+                        <h5 class="modal-title" id="staticBackdropLabel">Request petition</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
                     <div class="modal-body">
-                        <form id="helpForm" method="POST" action="/helpBlog">
+                        <form id="petitionForm" method="POST" action="/petitions">
                             <div class="form-group">
-                                <label for="title" class="mt-3 mb-1">Subject:</label>
-                                <input placeholder="Blog Title" type="text" class="form-control" id="title"
-                                    name="title">
+                                <label for="title" class="mt-3 mb-1">Name Your Petition:</label>
+                                <input placeholder="Name" type="text" class="form-control" id="title" name="title">
                                 <br />
-                                <label for="body" class="mt-3 mb-1">Description:</label>
-                                <textarea
-                                    placeholder="Describe the situation and the type of help you need from an ally."
-                                    class="form-control" rows="10" id="body" name="body"></textarea>
-                                <input type="textfield" id="help_userid" name="help_userid" />
-                                <input type="textfield" id="help_username" name="help_username" />
+                                <label for="body" class="mt-3 mb-1">What's Your Petition About?</label>
+                                <textarea placeholder="Describe the purpose of this petition." class="form-control"
+                                    rows="10" id="body" name="body"></textarea>
+                                <input type="textfield" id="petition_userid" name="petition_userid" />
+                                <input type="textfield" id="petition_username" name="petition_username" />
+
+                                <label for="goal" class="mt-3 mb-1">How Many Signatures Are You Trying To Acquire?</label>
+                                <input placeholder="Goal #" type="text" class="form-control" id="goal" name="goal">
+                                <br />
                             </div>
                             <div class="modal-footer">
                                 <button type="submit" class="btn submit mt-3 mb-1">Submit</button>
                             </div>
                         </form>
-                    </div> <!-- / modal-body -->
-                </div> <!-- / modal-content -->
-            </div> <!-- / modal-dialog -->
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="row mb-5">
-            <div class="col-md-12 blog-container">
+            <div class="col-md-12 petition-container">
                 <!-- {{#each data}} -->
-                <div class="card border mt-5 mb-2">
-                    <div class="card-header pt-3">
-                        <button class="connect btn"
-                            onclick="location.href='/messages/compose/{{dataValues.uid}}/{{dataValues.id}}/0'">Connect</button>
-                        <h4>Title: Eviction</h4>
+                <div class="card">
+                    <div class="card-header">
+                        <h4>Title: Juneteenth</h4>
                         <p>Created: Today</p>
-                        <p id="blogName">Username: Abby</p>
+                        <p id="petitionName">Username: Abby</p>
                     </div>
                     <div class="card-body">
-                        <p>Description: I think I'm being evicted because of my race.</p>
+                        <p>Description: Make Juneteenth a national holiday!</p>
+                        <button type="button" class="btn signature" data-toggle="modal"
+                            data-target="#signPetition{{dataValues.id}}">Sign!</button>
                     </div>
+
+
+                    <div class="progress w-75 m-4">
+                        <div class="progress-bar" role="progressbar" style="width: {{dataValues.sigCount}}%;"
+                            aria-valuenow="{{dataValues.sigCount}}" aria-valuemin="0"
+                            aria-valuemax="{{dataValues.goal}}"></div>
+                    </div>
+
                 </div>
                 <!-- {{/each}} -->
             </div>
         </div>
     </div>
+<!-- 
+    {{#each data}}
+    // Sign Modals -->
+    <!-- Form Modal -->
+    <div class="modal fade" id="signPetition{{dataValues.id}}" data-backdrop="static" tabindex="-1" role="dialog"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Sign Now!</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form id="petitionForm" method="POST" action="/sign">
+                        <div class="form-group">
+                            Are you sure?
+                            <input type="textfield" style="display:none" id="signature_petitions_id"
+                                name="signature_petitions_id" value="{{dataValues.id}}" />
+                        </div>
+                        <div class="modal-footer">
+                            <button type="submit" class="btn submit">Sign</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- 
+    {{/each}} -->
+
     <!-- SCRIPT FOR MODALS -->
     <script>
         $(function () {
@@ -172,6 +194,7 @@
             });
         });
     </script>
+    <!-- // < !--js files-- > -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.0/moment.min.js" type="text/javascript"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"

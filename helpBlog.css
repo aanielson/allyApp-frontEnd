@@ -1,0 +1,90 @@
+/* ============main section============ */
+.card-header button.connect {
+    float: right;
+    margin: 5px;
+}
+.card {
+    background-color: rgb(249, 245, 245);
+    box-shadow: .5px .5px rgb(9, 89, 118);
+}
+.card-header {
+    background-color: rgb(235, 233, 233);
+}
+.card-header h4 {
+    margin-top: 10pt;
+    margin-bottom: 15pt;
+}
+#help-post {
+    background-color: rgb(0, 176, 240);
+}
+#petition-post {
+    background-color: rgb(0, 176, 240);
+}
+.ally-box {
+    background-color: rgb(255, 255, 218);
+    padding: 20px 180px 30px 180px;
+    margin-bottom: 10px;
+    box-shadow: .5px .5px rgb(9, 89, 118);
+  }
+
+.connect {
+  background-color: rgb(0, 176, 240);
+  box-shadow: .5px .5px rgb(9, 89, 118);
+}
+
+.help-btn {
+    margin: 0 auto;
+    font-size: 10pt;
+    background-color: rgb(242, 242, 242);
+    box-shadow: .5px .5px rgb(9, 89, 118);
+    color: black;
+    min-height: 50px;
+    width: 300px;
+  }
+
+/* ============form section============ */
+
+  form .error {
+      color: red;
+  }
+  
+  form input.error {
+    border: 1px solid red;
+  }
+.modal-header {
+    background-color: rgb(235, 233, 233);
+}
+.modal-content {
+    background-color: rgb(249, 245, 245);
+    color: black;
+    box-shadow: .5px .5px rgb(9, 89, 118);
+  }
+.modal-footer btn {
+    background-color: rgb(0, 176, 240);
+    box-shadow: .5px .5px rgb(9, 89, 118);
+  }
+  #title.form-control, #body.form-control {
+    background-color: rgb(242, 242, 242);
+    box-shadow: .5px .5px rgb(9, 89, 118);
+  }
+  .blog-container {
+    color: black;
+  }
+  
+  @media screen and (max-width: 785px) {
+    #ally {
+      font-size: 50px;
+    }
+    #ally1 {
+      font-size: 30px;
+    }
+    #ally2 {
+      font-size: 15px;
+    }
+    #pos {
+      font-size: 20px;
+    }
+    #definition {
+      font-size: 15px;
+    }
+  }
